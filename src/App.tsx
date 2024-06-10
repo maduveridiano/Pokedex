@@ -15,7 +15,6 @@ import Loader from "./components/Loader";
 
 const Search = lazy(() => import("./pages/Search"));
 const MyList = lazy(() => import("./pages/MyList"));
-const About = lazy(() => import("./pages/About"));
 const Compare = lazy(() => import("./pages/Compare"));
 const Pokemon = lazy(() => import("./pages/Pokemon"));
 
@@ -55,7 +54,6 @@ export default function App() {
             <Routes>
               <Route element={<Search />} path="/search" />
               <Route element={<MyList />} path="/list" />
-              <Route element={<About />} path="/about" />
               <Route element={<Compare />} path="/compare" />
               <Route element={<Pokemon />} path="/pokemon/:id" />
               <Route element={<Navigate to="/pokemon/1" />} path="*" />
