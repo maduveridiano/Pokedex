@@ -5,7 +5,6 @@ import { Link, useLocation } from "react-router-dom";
 import { resetRandomPokemons } from "../app/slices/PokemonSlice";
 import { useAppDispatch } from "../app/hooks";
 export default function Navbar() {
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const navigationRoutes = [
     {
       name: "Search",
@@ -22,10 +21,6 @@ export default function Navbar() {
     {
       name: "My List",
       route: "/list",
-    },
-    {
-      name: "About",
-      route: "/about",
     },
   ];
   const location = useLocation();

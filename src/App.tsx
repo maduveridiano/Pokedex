@@ -47,7 +47,7 @@ export default function App() {
   return (
     <div className="main-container">
       <Background />
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Suspense fallback={<Loader />}>
           <div className="app">
             <Navbar />
